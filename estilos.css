@@ -1,0 +1,47 @@
+body{
+ margin: 0px;
+}
+
+main{
+    margin: 0px;
+    background-color: aqua;
+}
+
+.logo{
+    position: absolute;
+    top: 9%;
+    left: 2.5%;
+    /*right: 37.43px;*/
+}
+
+.campo-texto{
+    position: absolute;
+    width: 55%;
+    height: 50%;
+    top:20%;
+    left: 10%;
+
+    background: red;
+    resize: none;
+}
+
+.container-botones{
+    position: absolute;
+    width: 55.5%;
+    height: 7%;
+    top:80%;
+    left: 10%;
+
+    background: blue;
+}
+
+.container-pantalla{
+    position: absolute;
+    width: 25%;
+    height: 83%;
+    top: 9%;
+    left: 70%;
+
+    background-color: chartreuse;
+    border-radius: 32px;
+}
