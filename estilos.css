@@ -69,8 +69,42 @@ main{
     height: 83%;
     top: 9%;
     left: 70%;
+    text-align: center;
 
     background: white;
     border-radius: 32px;
     box-shadow: 10px 20px 60px 5px #b4c5da;
+}
+
+.pantalla{
+    margin: 0px ;
+    padding: 0px;
+    position: relative;
+    width: 92%;
+    height: 60%;
+    top: 4%;
+
+    resize: none;
+    font-size: 1.7em;
+}
+
+.imagen-munheco{
+    position: absolute;
+    width: 85%;
+    top: 8%;
+    left: 8%;
+
+}
+
+.contenedor-texto{
+    position: relative;
+    padding-top: 12%;
+}
+
+.contenedor-texto h3{
+    font-size: 1.4em;
+}
+
+.contenedor-texto p{
+    font-size: 1.2em;
 }
