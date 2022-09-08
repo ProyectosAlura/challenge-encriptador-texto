@@ -64,6 +64,11 @@ function desencriptar(){
     pantalla.innerText=desencriptado;
 }
 
+function copiar(){
+    pantalla.select();
+    document.execCommand("copy");
+}
+
 setInterval(verificar,400);
 
 var botonEncriptar = document.querySelector(".boton-encriptar");
@@ -71,3 +76,6 @@ botonEncriptar.onclick=encriptar;
 
 var botonDesencriptar = document.querySelector(".boton-desencriptar");
 botonDesencriptar.onclick=desencriptar;
+
+var botonCopiar = document.querySelector(".boton-copiar");
+botonCopiar.onclick=copiar;

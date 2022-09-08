@@ -108,3 +108,12 @@ main{
 .contenedor-texto p{
     font-size: 1.2em;
 }
+
+.boton-copiar{
+    height: 10%;
+    width: 80%;
+    border: 1px solid #0A3871;
+    border-radius: 1.4em;
+    font-size: 1.2em;
+    background: #D8DFE8;
+}
