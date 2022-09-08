@@ -29,6 +29,17 @@ main{
     font-size: 2em;
 }
 
+.campo-texto::placeholder{
+    color: #0e4a94;
+    font-weight: 50;
+
+}
+
+.campo-texto:focus{
+    outline: none;
+}
+
+
 .container-botones{
     display: flex;
     flex-direction: row;
@@ -45,11 +56,10 @@ main{
 
 .estructura-boton{
     width: 100%;
-    height:max-content;
-    padding: 2.7%;
+    padding: 2.0%;
 
     border: 1px solid #0A3871;
-    border-radius: 24px;
+    border-radius: 1.4em;
     font-size: 1.2em;
 }
 
@@ -58,14 +68,22 @@ main{
     color: #FFFFFF;
 }
 
+.boton-encriptar:hover{
+    background-color:#104e9a;
+}
+
 .boton-desencriptar{
     background: #D8DFE8;
     color: #0A3871;
 }
 
+.boton-desencriptar:hover{
+    background-color:#bbc1ca;
+}
+
 .container-pantalla{
     position: absolute;
-    width: 25%;
+    width: 26%;
     height: 83%;
     top: 9%;
     left: 70%;
@@ -81,24 +99,31 @@ main{
     padding: 0px;
     position: relative;
     width: 92%;
-    height: 60%;
-    top: 4%;
+    height: 72%;
+    top: 3%;
 
     resize: none;
+    border: none;
     font-size: 1.7em;
+}
+
+.pantalla:focus{
+    outline: none;
 }
 
 .imagen-munheco{
     position: absolute;
     width: 85%;
-    top: 8%;
+    top: 10%;
     left: 8%;
 
 }
 
 .contenedor-texto{
-    position: relative;
-    padding-top: 12%;
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    right: 5%;
 }
 
 .contenedor-texto h3{
@@ -106,13 +131,17 @@ main{
 }
 
 .contenedor-texto p{
-    font-size: 1.2em;
+    font-size: 1.05em;
 }
 
 .boton-copiar{
-    height: 10%;
+    position: absolute;
     width: 80%;
+    top: 83.1%;
+    left: 10%;
+    padding: 4%;
     border: 1px solid #0A3871;
+    color: #0A3871;
     border-radius: 1.4em;
     font-size: 1.2em;
     background: #D8DFE8;

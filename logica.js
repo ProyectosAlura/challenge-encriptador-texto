@@ -2,14 +2,18 @@ var texto = document.querySelector(".campo-texto");
 var pantalla = document.querySelector(".pantalla");
 var estado = document.querySelector(".estado");
 
+var botonCopiar = document.querySelector(".boton-copiar");
+
 //Funciones
 
 function verificar(){
     var mensaje = texto.value.toLocaleLowerCase();
     if(mensaje==="" && pantalla.value===""){
         estado.style.visibility="visible";
+        botonCopiar.style.visibility="hidden";
     }else{
         estado.style.visibility="hidden";
+        botonCopiar.style.visibility="visible";
     }
 }
 
@@ -77,5 +81,4 @@ botonEncriptar.onclick=encriptar;
 var botonDesencriptar = document.querySelector(".boton-desencriptar");
 botonDesencriptar.onclick=desencriptar;
 
-var botonCopiar = document.querySelector(".boton-copiar");
 botonCopiar.onclick=copiar;
