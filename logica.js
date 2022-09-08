@@ -52,7 +52,22 @@ function encriptar(){
     pantalla.innerText=encriptado;
 }
 
+function desencriptar(){
+    var mensaje = texto.value.toLocaleLowerCase();
+    var desencriptado = mensaje.replace(/enter/g,"e") /*se remplaza globalmente*/
+    .replace(/imes/g,"i")
+    .replace(/ai/g,"a")
+    .replace(/ober/g,"o")
+    .replace(/ufat/g,"u");
+
+    texto.value="";
+    pantalla.innerText=desencriptado;
+}
+
 setInterval(verificar,400);
 
 var botonEncriptar = document.querySelector(".boton-encriptar");
 botonEncriptar.onclick=encriptar;
+
+var botonDesencriptar = document.querySelector(".boton-desencriptar");
+botonDesencriptar.onclick=desencriptar;
