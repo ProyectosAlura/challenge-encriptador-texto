@@ -12,7 +12,7 @@ function verificar(){
         estado.style.visibility="visible";
         botonCopiar.style.visibility="hidden";
     }else{
-        if(botonCopiar.style.visibility===none){
+        if(botonCopiar.style.visibility==="none"){
             estado.style.visibility="hidden";
         }else{
             estado.style.visibility="hidden";
