@@ -72,8 +72,9 @@ function copiar(){
     pantalla.select();
     document.execCommand("copy");
 }
-
+verificar();
 setInterval(verificar,400);
+
 
 var botonEncriptar = document.querySelector(".boton-encriptar");
 botonEncriptar.onclick=encriptar;

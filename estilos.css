@@ -42,11 +42,12 @@ main{
 
 .info{
     position: absolute;
-    bottom: 21%;
+    bottom: 24%;
     left: 10%;
 }
 
 .info p {
+    display: inline;
     color: #495057;
     font-weight: 500;
     font-size: 1.1em;
@@ -159,6 +160,9 @@ main{
     background: #D8DFE8;
 }
 
+.boton-copiar:hover{
+    background-color:#bbc1ca;
+}
 
 /* Estilos responsive*/
 
@@ -170,7 +174,7 @@ main{
 
     .info{
         position: absolute;
-        bottom: 44%;
+        top: 52%;
         left: 10%;
     }
 
@@ -180,7 +184,7 @@ main{
 
     .container-botones{
         width: 80%;
-        top: 55%;
+        top: 57%;
     }
 
     .container-pantalla{
@@ -243,5 +247,28 @@ main{
 
     .contenedor-texto p{
         font-size: 1.2em;
+    }
+}
+
+@media screen and (max-height:600px){
+    .campo-texto{
+        top: 25%;
+        height: 50%;
+    }
+
+    .info{
+        top: 80%;
+    }
+
+    .container-botones{
+        top: 90%;
+    }
+
+    .container-pantalla{
+        visibility: hidden;
+    }
+
+    .contenedor-texto{
+        visibility: hidden;
     }
 }
