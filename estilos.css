@@ -271,4 +271,7 @@ main{
     .contenedor-texto{
         visibility: hidden;
     }
+    .boton-copiar{
+        display: none;
+    }
 }

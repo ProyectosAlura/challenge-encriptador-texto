@@ -12,8 +12,12 @@ function verificar(){
         estado.style.visibility="visible";
         botonCopiar.style.visibility="hidden";
     }else{
-        estado.style.visibility="hidden";
-        botonCopiar.style.visibility="visible";
+        if(botonCopiar.style.visibility===none){
+            estado.style.visibility="hidden";
+        }else{
+            estado.style.visibility="hidden";
+            botonCopiar.style.visibility="visible";
+        }
     }
 }
 
